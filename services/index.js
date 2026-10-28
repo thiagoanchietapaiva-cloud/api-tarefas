@@ -16,7 +16,7 @@ require('dotenv').config();
  */
 async function executarSQL(sql, params = []) {
     // O Pool gerencia a abertura e o fechamento das conexões automaticamente a partir das variáveis de ambient
-    
+
     const pool = new Pool({
         connectionString: process.env.DATABASE_URL,
         ssl: {
